@@ -62,6 +62,20 @@ mmplot(stat.data=stat.data, map.data=map.data,
 
 }
 
+
+
+#' Print lmplot Object to a File
+#' 
+#' Takes a stored lmplot object and uses the print method for objects of class
+#' mm to print to a file whose type is implied by the file name.
+#' 
+#' 
+#' @param plobject name of the lmplot object.
+#' @param name name of the file to be produced. Tiff, png, jpeg, and pdf are
+#' recognized.
+#' @param res resolution in dpi.
+#' @return Returns nothing.
+#' @author Quinn Payton \email{Payton.Quinn@@epa.gov}
 printLMPlot <- function(plobject, name=NULL, res=300){
  print(plobject, name=name, res=res)
 }

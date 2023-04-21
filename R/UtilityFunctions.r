@@ -27,6 +27,17 @@ make.string <- function(vct) {
 }
 
 
+
+
+#' Substring Function
+#' 
+#' Mimics the Excel Function of the Same Name
+#' 
+#' 
+#' @param txt string to be substringed.
+#' @param i number of characters to substring.
+#' @return A character value containing the substring.
+#' @author Quinn Payton \email{Payton.Quinn@@epa.gov}
 right <- function(txt, i)
    substring(txt, nchar(txt)-i+1)
 
